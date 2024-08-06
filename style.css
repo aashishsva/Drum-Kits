@@ -1,0 +1,59 @@
+body{
+    background-color: pink;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.8rem;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    font-weight: 800;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover::after {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.crash{
+    background-image: url("https://atlas-content-cdn.pixelsquid.com/stock-images/crash-cymbal-qvna7R4-600.jpg");
+    background-size: cover;
+}
+.kick{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/016/462/023/non_2x/drum-kit-icon-free-vector.jpg");
+    background-size: cover;
+}
+.snare{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEp6IvnwiruLDGQdqZKtV7YCHmG1Ra0gRS8Q&s");
+    background-size: cover;
+    background-position: center;
+}
+.tom{
+    background-image: url("https://media.istockphoto.com/id/1438352617/photo/drum-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=94skCu0I1fWFDLyqCnLMuBlD2ayy9mQvT_Sd_ouSBdY=");
+    background-size: cover;
+    background-position: center;
+}
